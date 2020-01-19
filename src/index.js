@@ -1,11 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
-const config = require('../config');
+const dbConfig = require('../config');
 
 const app = express();
 
-mongoose.connect(`mongodb+srv://${config.mongo.user}:${config.mongo.passw}@cluster0-8dbgc.mongodb.net/back?retryWrites=true&w=majority`, {
+mongoose.connect(`mongodb+srv://user:pswd@cluster0-8dbgc.mongodb.net/back?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

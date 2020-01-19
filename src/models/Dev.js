@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
      github_username: String,
      bio: String,
      avatar_url: String,
-     techs: [String],
+     techs: [String]
  });
 
  module.exports = mongoose.model('Dev', DevSchema);
