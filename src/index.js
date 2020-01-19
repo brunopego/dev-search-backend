@@ -5,7 +5,7 @@ const dbConfig = require('../config');
 
 const app = express();
 
-mongoose.connect(`mongodb+srv://user:pswd@cluster0-8dbgc.mongodb.net/back?retryWrites=true&w=majority`, {
+mongoose.connect('mongodb+srv://user:pswd@cluster0-8dbgc.mongodb.net/back?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
